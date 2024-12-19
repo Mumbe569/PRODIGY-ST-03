@@ -1,0 +1,46 @@
+**THE TEST CASES WERE PERFORMED USING CODELESS TESTING TOOL (TESTIM)
+(Chrome | Windows 10 | 1024 X 680)
+
+
+##TEST CASE 1 Positive Test Case (Valid Credentials)
+    **Steps:
+Navigate to URL:
+Action: Navigate to https://www.saucedemo.com/.
+Enter Username:
+Action: Input standard_user into the username field (#user-name).
+Enter Password:
+Action: Input secret_sauce into the password field (#password).
+Click Login Button:
+Action: Click the login button (#login-button).
+Validate Successful Login:
+Assertion: Verify that the URL contains inventory.html or that an element (e.g., #inventory_container) is visible. 
+
+**Link to testim https://app.testim.io/#/project/UfyRGUDz9AzQFYIe7Vic/branch/master/test/0ZsfhAkTFBqoowcn?result-id=aa1Yrf9I6lHNTy0L
+
+##TEST CASE 2  Negative Test Case (Invalid Credentials)
+     **Steps:
+Navigate to URL:
+Action: Navigate to https://www.saucedemo.com/.
+Enter Invalid Username:
+Action: Input invalid_user into the username field (#user-name).
+Enter Invalid Password:
+Action: Input invalid_password into the password field (#password).
+Click Login Button:
+Action: Click the login button (#login-button).
+Validate Error Message:
+Assertion: Verify that the error message Epic sadface: Username and password do not match is displayed in the error container (.error-message-container).
+
+**Link to testim https://app.testim.io/#/project/UfyRGUDz9AzQFYIe7Vic/branch/master/test/JjFlbB04T3FFOkJM?result-id=GZmPMxpQUZOZtvP1
+
+##TEST CASE 3  Negative Test Case (Empty Fields)
+   **Steps:
+Navigate to URL:
+Action: Navigate to https://www.saucedemo.com/.
+Leave Fields Blank:
+Action: Do not enter any text into the username or password fields.
+Click Login Button:
+Action: Click the login button (#login-button).
+Validate Error Message:
+Assertion: Verify that the error message Epic sadface: Username is required is displayed in the error container (.error-message-container).
+
+**Link to testim https://app.testim.io/#/project/UfyRGUDz9AzQFYIe7Vic/branch/master/test/XvS6krUsH01T0x2r
